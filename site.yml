@@ -1,0 +1,8 @@
+---
+- name: play for deploying the application
+  hosts: all
+  tasks:
+    - name: copy the index.html to the remote server
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
